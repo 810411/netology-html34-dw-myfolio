@@ -20,6 +20,7 @@ h2 {
     font-size: 4.6em;
     letter-spacing: 0.029em;
     color: #02918c;
+    padding: 0 40px;
 }
 
 .tag {
@@ -145,6 +146,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    color: white;
 }
 
 button:active, header button:focus {
@@ -202,6 +204,7 @@ section p strong {
     display: inline-block;
     box-sizing: border-box;
     list-style-type: none;
+    vertical-align: top;
     width: 25%;
     margin-right: -3px;
     padding: 20px 60px;
@@ -239,12 +242,14 @@ section p strong {
 }
 
 .services {
+    display: table;
     background-color: #f0f0e8;
     text-align: left;
 }
 
 .services h2 {
     margin-bottom: 30px;
+    padding-left: 0;
 }
 
 .services article p {
@@ -253,28 +258,20 @@ section p strong {
 }
 
 .services .left {
-    float: left;
-    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+    padding: 27px 70px 20px 92px;
     width: 50%;
-    padding: 27px 70px 0 92px;
 }
 
-.services .right {
-    float: right;
-    width: 50%;
-    margin-bottom: -2px;
-}
-
-.services .right img {
-    opacity: 0.3;
-    width: 100%;
-    height: 100%;
-}
-
-.services:before, .services:after {
-    display: block;
+.services:after {
     content: '';
-    clear: both;
+    background: url("../images/services.jpg") center #f0f0e8;
+    background-size: cover;
+    opacity: 0.3;
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
 }
 
 .services ul {
@@ -415,7 +412,7 @@ input, textarea {
     color: #7e8287;
     font-size: 1.6em;
     text-align: center;
-    padding: 0;
+    padding: 0 40px;
     margin: 0 auto;
 }
 
@@ -425,7 +422,7 @@ input:hover, input:focus, textarea:hover, textarea:focus, button:focus {
 
 input {
     border-bottom: 1px solid #7e8287;
-    width: 50%;
+    width: 43%;
     margin-top: 50px;
     line-height: 3.1em;
 }
@@ -434,9 +431,9 @@ textarea {
     overflow: auto;
     resize: none;
     background-image: linear-gradient(transparent 25px, transparent calc(42px + 3em), #7e8287 0px);
-    background-size: 100% calc(42px + 3.1em);
+    background-size: 100% calc(41.5px + 3.1em);
     line-height: calc(42px + 3.1em);
-    width: 72%;
+    width: 65%;
     margin-top: 0;
     padding-top: 20px;
 }
