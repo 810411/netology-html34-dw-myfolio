@@ -75,7 +75,7 @@ header {
 .logo {
     font-size: 2.6em;
     letter-spacing: 0.03em;
-    padding: 14px 0 18px 48px;
+    padding: 13px 0 19px 50px;
 }
 
 .yellow {
@@ -97,7 +97,7 @@ header {
     font-size: 1.2em;
     line-height: 3.5em;
     letter-spacing: 0.014em;
-    margin: 0 40px 0 6px;
+    margin: 0 42px 0 4px;
 }
 
 .site-nav li a:hover {
@@ -126,31 +126,14 @@ header {
     font-size: 3em;
 }
 
-.intro form:before {
+
+.before-brace:after {
     content: '}';
-    display: block;
+    position: absolute;
+    display: inline-block;
     height: 120px;
-    margin: 2px 0 0 26px;
     font-family: 'Lato', sans-serif;
-    transform: rotate(90deg);
-    font-size: 120px;
-    font-weight: 100;
-
-}
-
-.intro .quote {
-    position: relative;
-    box-sizing: border-box;
-    width: 120px;
-    margin: 0 auto;
-
-}
-
-.intro .quote p {
-    height: 120px;
-    margin: 2px 0 0 27px;
-    font-family: 'Lato', sans-serif;
-    transform: rotate(90deg);
+    transform: translate(-180px, 20px) rotate(90deg);
     font-size: 120px;
     font-weight: 100;
 }
@@ -158,7 +141,7 @@ header {
 button {
     width: 196px;
     height: 47px;
-    margin: 4px 10px 0 3px;
+    margin: 126px 0 0 -4px;
     border: none;
     background-color: #cfc91d;
     color: black;
