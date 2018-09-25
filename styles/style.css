@@ -100,6 +100,10 @@ header {
     margin: 0 42px 0 4px;
 }
 
+.site-nav li a {
+    display: inline-block;
+}
+
 .site-nav li a:hover {
     text-decoration: underline #cfc91d;
 }
