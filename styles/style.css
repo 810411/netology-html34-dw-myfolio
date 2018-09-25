@@ -5,7 +5,8 @@ body {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -19,8 +20,17 @@ h1 {
 h2 {
     font-size: 4.6em;
     letter-spacing: 0.029em;
+    text-transform: uppercase;
     color: #02918c;
     padding: 0 40px;
+}
+
+h2:after {
+    display: block;
+    color: #7e8287;
+    letter-spacing: 0;
+    font-size: 0.35em;
+    font-weight: 400;
 }
 
 .tag {
@@ -46,7 +56,8 @@ header {
 }
 
 .top-menu .inner-content {
-    width: 67%;
+    width: available;
+    max-width: 1280px;
     margin: 0 auto;
     text-align-last: justify;
 }
@@ -101,7 +112,7 @@ header {
     background: url("../images/header.jpg") center top;
     background-size: cover;
     margin: 61px 0 0 0;
-    padding: 205px 0 0 7px;
+    padding: 205px 0 210px 7px;
     text-align: center;
 }
 
@@ -113,6 +124,18 @@ header {
 
 .intro p:first-child {
     font-size: 3em;
+}
+
+.intro form:before {
+    content: '}';
+    display: block;
+    height: 120px;
+    margin: 2px 0 0 26px;
+    font-family: 'Lato', sans-serif;
+    transform: rotate(90deg);
+    font-size: 120px;
+    font-weight: 100;
+
 }
 
 .intro .quote {
@@ -135,7 +158,7 @@ header {
 button {
     width: 196px;
     height: 47px;
-    margin: 4px 10px 210px 3px;
+    margin: 4px 10px 0 3px;
     border: none;
     background-color: #cfc91d;
     color: black;
@@ -149,7 +172,8 @@ button:hover {
     color: white;
 }
 
-button:active, header button:focus {
+button:active,
+header button:focus {
     outline: none;
 }
 
@@ -188,10 +212,15 @@ section p strong {
     margin: 88px 0 20px 3px;
 }
 
-.about article {
+.about h2:after {
+    content: '~~~~~~~~ :: ~~~~~~~~';
+    margin-top: 19px;
+}
+
+.about > p {
     margin: 18px 0 40px 0;
     padding: 0 200px;
-    line-height: 4em;
+    line-height: 2.5em;
 }
 
 .about ul {
@@ -248,11 +277,16 @@ section p strong {
 }
 
 .services h2 {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     padding-left: 0;
 }
 
-.services article p {
+.services h2:after {
+    content: '~~~~~ :: ~~~~~';
+    margin-top: 30px;
+}
+
+.services .left > p {
     margin: 0;
     line-height: 2.5em;
 }
@@ -276,7 +310,7 @@ section p strong {
 
 .services ul {
     position: relative;
-    margin: 30px 0;
+    margin: 32px 0;
     padding: 0;
 }
 
@@ -329,10 +363,15 @@ section p strong {
     margin: 98px 0 22px 3px;
 }
 
-.work article {
-    margin: -5px 0 70px 0;
+.work h2:after {
+    content: '~~~~~ :: ~~~~~';
+    margin-top: 20px;
+}
+
+.work > p {
+    margin: -10px 0 70px 0;
     padding: 0 300px;
-    line-height: 4em;
+    line-height: 2.5em;
 }
 
 .photo {
@@ -346,7 +385,7 @@ section p strong {
 }
 
 .photo > img {
-    width: auto;
+    width: available;
     height: 100%;
 }
 
@@ -365,7 +404,8 @@ section p strong {
     margin: 20px 25px;
 }
 
-aside:before, aside:after {
+aside:before,
+aside:after {
     display: block;
     content: '';
     clear: both;
@@ -393,19 +433,24 @@ aside:before, aside:after {
     margin: 88px 0 20px 3px;
 }
 
-.contact article p {
-    margin: -3px 0 61px 0;
+.contact h2:after {
+    content: '~~~~~ :: ~~~~~';
+    margin-top: 20px;
+}
+
+.contact > p {
+    margin: -6px 0 61px 0;
     line-height: 2.5em;
 }
 
-fieldset {
-    border: none;
+.contact form {
     background-color: #0b0b0b;
     margin: 0;
-    padding: 0;
+    padding: 1px 0 140px 0;
 }
 
-input, textarea {
+input,
+textarea {
     display: block;
     border: none;
     background-color: #0b0b0b;
@@ -416,7 +461,11 @@ input, textarea {
     margin: 0 auto;
 }
 
-input:hover, input:focus, textarea:hover, textarea:focus, button:focus {
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button:focus {
     outline: none;
 }
 
@@ -424,7 +473,7 @@ input {
     border-bottom: 1px solid #7e8287;
     width: 43%;
     margin-top: 50px;
-    line-height: 3.1em;
+    line-height: 3em;
 }
 
 textarea {
@@ -439,7 +488,7 @@ textarea {
 }
 
 .contact button {
-    margin: 45px 0 142px 0;
+    margin: 45px 0 0 3px;
 }
 
 .footer {
