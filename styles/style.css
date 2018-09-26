@@ -20,7 +20,6 @@ h1 {
 h2 {
     font-size: 4.6em;
     letter-spacing: 0.029em;
-    text-transform: uppercase;
     color: #02918c;
     padding: 0 40px;
 }
@@ -448,6 +447,11 @@ textarea {
     margin: 0 auto;
 }
 
+input::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
+}
+
 input:hover,
 input:focus,
 textarea:hover,
@@ -488,5 +492,6 @@ textarea {
     z-index: 9999;
     padding: 34px 0 25px 0;
     font-size: 1.2em;
+    text-transform: uppercase;
     text-align: center;
 }
